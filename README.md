@@ -15,10 +15,14 @@ Loading Data into Google BigQuery:
 Data Analysis:
 - Executes SQL queries to analyze the data within BigQuery.
 
+Automation with Apache Airflow (not finished)
+- Sets up Apache Airflow to automate the entire data pipeline process.
+- Creates Directed Acyclic Graphs (DAGs) to define workflows, from data collection and loading to analysis and reporting.
+- Configures schedules for task automation and monitors their execution.
+
 
 Next development: 
-- Automation with Apache Airflow
-- Complete Directed Acyclic Graphs (DAGs) to define workflows, from data collection and loading to analysis and reporting.
-- Configures schedules for task automation and monitors their execution.
+- Complete the Airflow field
+- Create some dashboard overview via the data extracted and loaded
 
 
