@@ -1,0 +1,34 @@
+# Sử dụng hình ảnh Airflow cơ bản
+FROM apache/airflow:2.7.2-python3.9
+
+# Chuyển sang quyền root để cài đặt các gói hệ thống
+USER root
+
+# Cài đặt các gói hệ thống cần thiết
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    curl \
+    vim && \
+    rm -rf /var/lib/apt/lists/*
+
+# Chuyển sang quyền người dùng airflow để cài đặt các gói Python
+USER airflow
+
+# Cài đặt các gói Python cần thiết
+RUN pip install --no-cache-dir selenium google-cloud-bigquery pandas beautifulsoup4
+
+# Sao chép cấu hình và DAGs của bạn vào container
+COPY dags /opt/airflow/dags
+
+
+
+# Đảm bảo quyền sở hữu cho các thư mục
+USER root
+RUN chown -R airflow /opt/airflow/dags /opt/airflow/dags/configs
+
+# Chuyển trở lại quyền người dùng airflow để chạy airflow
+USER airflow
+
+# Khởi chạy Airflow
+ENTRYPOINT ["airflow"]
+CMD ["webserver"]

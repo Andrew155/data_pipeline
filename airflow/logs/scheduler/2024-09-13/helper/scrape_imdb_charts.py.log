@@ -1,0 +1,608 @@
+[2024-09-13T02:43:28.019+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:43:28.030+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:43:28.034+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:43:28.034+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:43:47.490+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:43:47.319+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:43:47.525+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:43:47.891+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 19.880 seconds
+[2024-09-13T02:46:33.587+0000] {processor.py:157} INFO - Started process (PID=138) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:46:33.594+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:46:33.601+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:46:33.600+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:46:46.719+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:46:46.620+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:46:46.951+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:46:47.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 13.953 seconds
+[2024-09-13T02:47:31.006+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:47:31.008+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:47:31.011+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:47:31.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:47:33.752+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:47:33.743+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:47:33.754+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:47:33.826+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.826 seconds
+[2024-09-13T02:48:04.897+0000] {processor.py:157} INFO - Started process (PID=269) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:04.902+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:48:04.905+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:48:04.905+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:13.299+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:48:13.239+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:48:13.303+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:13.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 8.602 seconds
+[2024-09-13T02:48:43.822+0000] {processor.py:157} INFO - Started process (PID=352) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:43.825+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:48:43.828+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:48:43.828+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:47.991+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:48:47.981+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:48:47.992+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:48:48.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 4.223 seconds
+[2024-09-13T02:49:18.859+0000] {processor.py:157} INFO - Started process (PID=425) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:49:18.862+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:49:18.864+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:49:18.863+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:49:23.594+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:49:23.558+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:49:23.599+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:49:23.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 4.850 seconds
+[2024-09-13T02:49:57.077+0000] {processor.py:157} INFO - Started process (PID=493) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:49:57.087+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:49:57.091+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:49:57.091+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:50:00.793+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:50:00.779+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:50:00.798+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:50:00.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 3.836 seconds
+[2024-09-13T02:50:31.055+0000] {processor.py:157} INFO - Started process (PID=567) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:50:31.061+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:50:31.066+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:50:31.066+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:50:33.646+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:50:33.618+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:50:33.649+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:50:33.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.686 seconds
+[2024-09-13T02:51:04.107+0000] {processor.py:157} INFO - Started process (PID=638) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:04.110+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:51:04.112+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:51:04.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:11.881+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:51:11.795+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:51:11.888+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:12.241+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 8.141 seconds
+[2024-09-13T02:51:42.994+0000] {processor.py:157} INFO - Started process (PID=714) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:42.999+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:51:43.001+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:51:43.001+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:45.156+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:51:45.146+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:51:45.158+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:51:45.203+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.228 seconds
+[2024-09-13T02:52:15.333+0000] {processor.py:157} INFO - Started process (PID=791) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:15.336+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:52:15.337+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:52:15.337+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:17.850+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:52:17.838+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:52:17.852+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:17.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.657 seconds
+[2024-09-13T02:52:48.618+0000] {processor.py:157} INFO - Started process (PID=860) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:48.621+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:52:48.623+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:52:48.623+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:52.324+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:52:52.315+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:52:52.326+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:52:52.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 3.829 seconds
+[2024-09-13T02:53:23.206+0000] {processor.py:157} INFO - Started process (PID=929) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:53:23.213+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:53:23.217+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:53:23.216+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:53:26.140+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:53:26.132+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:53:26.142+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:53:26.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 3.007 seconds
+[2024-09-13T02:53:56.372+0000] {processor.py:157} INFO - Started process (PID=1007) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:53:56.385+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:53:56.391+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:53:56.389+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:54:00.423+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:54:00.407+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:54:00.426+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:54:00.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 4.197 seconds
+[2024-09-13T02:54:30.886+0000] {processor.py:157} INFO - Started process (PID=1081) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:54:30.889+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:54:30.890+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:54:30.890+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:54:33.399+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:54:33.394+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:54:33.400+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:54:33.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.559 seconds
+[2024-09-13T02:55:03.756+0000] {processor.py:157} INFO - Started process (PID=1152) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:03.761+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:55:03.764+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:55:03.764+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:09.262+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:55:09.213+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:55:09.266+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:09.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 5.659 seconds
+[2024-09-13T02:55:39.825+0000] {processor.py:157} INFO - Started process (PID=1223) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:39.829+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:55:39.831+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:55:39.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:46.327+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:55:46.299+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:55:46.330+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:55:46.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 6.597 seconds
+[2024-09-13T02:56:16.782+0000] {processor.py:157} INFO - Started process (PID=1304) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:16.784+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:56:16.786+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:56:16.785+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:20.406+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:56:20.367+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:56:20.410+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:20.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 3.699 seconds
+[2024-09-13T02:56:50.867+0000] {processor.py:157} INFO - Started process (PID=1377) to work on /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:50.868+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helper/scrape_imdb_charts.py for tasks to queue
+[2024-09-13T02:56:50.870+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:56:50.869+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:52.926+0000] {logging_mixin.py:149} INFO - [2024-09-13T02:56:52.915+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helper/scrape_imdb_charts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helper/scrape_imdb_charts.py", line 13, in <module>
+    bigquery_client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 615, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 608, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 229, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 117, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /Users/nguyenlongnhat/DE_Project/airflow/dags/configs/ServiceKey_GoogleCloud.json was not found.
+[2024-09-13T02:56:52.928+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helper/scrape_imdb_charts.py
+[2024-09-13T02:56:52.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helper/scrape_imdb_charts.py took 2.119 seconds
